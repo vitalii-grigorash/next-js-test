@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+}
+.footer__title {
+    font-family: 'Zen Dots', cursive;
+    font-size: 30px;
+    line-height: 130%;
+    margin: 60px auto 0;
+    color: orange;
+}

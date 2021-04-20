@@ -1,0 +1,10 @@
+.main {
+    font-family: 'Zen Dots', cursive;
+    display: flex;
+}
+.main__title {
+    font-size: 28px;
+    line-height: 140%;
+    margin: 100px auto 0;
+    color: chocolate;
+}

@@ -1,0 +1,27 @@
+.contacts {
+    font-family: 'Zen Dots', cursive;
+    display: flex;
+    flex-direction: column;
+}
+.contacts__title {
+    font-size: 28px;
+    line-height: 140%;
+    margin: 100px auto 0;
+    color: chocolate;
+}
+.contacts__button {
+    font-family: 'Karantina', cursive;
+    width: 200px;
+    height: 50px;
+    margin: 50px auto 0;
+    background-color: chocolate;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.contacts__button:hover {
+    cursor: pointer;
+}

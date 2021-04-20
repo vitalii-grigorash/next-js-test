@@ -1,0 +1,27 @@
+.about-us {
+    font-family: 'Zen Dots', cursive;
+    display: flex;
+    flex-direction: column;
+}
+.about-us__title {
+    font-size: 28px;
+    line-height: 140%;
+    margin: 100px auto 0;
+    color: chocolate;
+}
+.about-us__button {
+    font-family: 'Karantina', cursive;
+    width: 200px;
+    height: 50px;
+    margin: 50px auto 0;
+    background-color: chocolate;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.about-us__button:hover {
+    cursor: pointer;
+}
