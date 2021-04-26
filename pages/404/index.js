@@ -13,6 +13,7 @@ export default function ErrorPage () {
 
       <Head>
         <title>Error 404</title>
+        <meta name="description" content="Ошибка 404: Страница не найдена"/>
       </Head>
 
       <h1 className="error__title">Page Not Found</h1>

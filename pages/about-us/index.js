@@ -13,6 +13,7 @@ export default function AboutUs () {
 
             <Head>
                 <title>About Us Page</title>
+                <meta name="description" content="Описание страницы About Us"/>
             </Head>
 
             <h1 className="about-us__title">About Us Page</h1>

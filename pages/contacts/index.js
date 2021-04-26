@@ -13,6 +13,7 @@ export default function Contacts () {
 
       <Head>
         <title>Contacts</title>
+        <meta name="description" content="Описание страницы с контактами!"/>
       </Head>
 
       <h1 className="contacts__title">Contacts</h1>
