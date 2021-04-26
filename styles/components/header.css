@@ -24,7 +24,7 @@
 .header__links:last-of-type {
     margin-right: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .header__navigation {
         flex-direction: column;
     }
