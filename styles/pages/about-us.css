@@ -25,3 +25,11 @@
 .about-us__button:hover {
     cursor: pointer;
 }
+@media screen and (max-width: 550px) {
+    .about-us__title {
+        margin: 40px auto 0;
+    }
+    .about-us__button {
+        margin: 40px auto 0;
+    }
+}

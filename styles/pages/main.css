@@ -8,3 +8,8 @@
     margin: 100px auto 0;
     color: chocolate;
 }
+@media screen and (max-width: 550px) {
+    .main__title {
+        margin: 40px auto 0;
+    }
+}

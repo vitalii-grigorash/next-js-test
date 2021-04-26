@@ -8,3 +8,8 @@
     margin: 60px auto 0;
     color: orange;
 }
+@media screen and (max-width: 550px) {
+    .footer__title {
+        margin: 40px auto 0;
+    }
+}

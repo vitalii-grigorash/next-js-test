@@ -16,7 +16,7 @@ export default function Header () {
                     <a className="header__links">About us page</a>
                 </Link>
                 <Link href={'/contacts'}>
-                    <a className="header__links">Contacts</a>
+                    <a className="header__links">Contacts Page</a>
                 </Link>
             </nav>
 

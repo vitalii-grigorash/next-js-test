@@ -12,7 +12,7 @@ export default function Contacts () {
     <div className='contacts'>
 
       <Head>
-        <title>Contacts</title>
+        <title>Contacts Page</title>
         <meta name="description" content="Описание страницы с контактами!"/>
       </Head>
 

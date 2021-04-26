@@ -25,3 +25,11 @@
 .contacts__button:hover {
     cursor: pointer;
 }
+@media screen and (max-width: 550px) {
+    .contacts__title {
+        margin: 40px auto 0;
+    }
+    .contacts__button {
+        margin: 40px auto 0;
+    }
+}
