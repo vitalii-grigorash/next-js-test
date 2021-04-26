@@ -16,7 +16,7 @@ export default function Contacts () {
         <meta name="description" content="Описание страницы с контактами!"/>
       </Head>
 
-      <h1 className="contacts__title">Contacts</h1>
+      <h1 className="contacts__title">Contacts Page</h1>
 
       <button className="contacts__button" onClick={buttonClick}>Main page</button>
       
