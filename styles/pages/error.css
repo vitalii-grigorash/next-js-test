@@ -25,3 +25,11 @@
 .error__button:hover {
     cursor: pointer;
 }
+@media screen and (max-width: 550px) {
+    .error__title {
+        margin: 40px auto 0;
+    }
+    .error__button {
+        margin: 40px auto 0;
+    }
+}
