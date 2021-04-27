@@ -1,6 +1,7 @@
 .main {
     font-family: 'Zen Dots', cursive;
     display: flex;
+    flex-direction: column;
 }
 .main__title {
     font-size: 28px;

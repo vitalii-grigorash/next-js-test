@@ -24,6 +24,13 @@
 }
 .contacts__button:hover {
     cursor: pointer;
+    background-color: rgb(182, 91, 26);
+}
+.contacts__button:active {
+    box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
+}
+.contacts__button:focus {
+    outline: none;
 }
 @media screen and (max-width: 550px) {
     .contacts__title {

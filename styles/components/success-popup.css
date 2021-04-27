@@ -1,0 +1,68 @@
+.success-popup {
+    display: flex;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s linear;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .5);
+}
+.success-popup_opened {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.success-popup__background {
+    margin: auto;
+    display: flex;
+    width: 300px;
+    height: 250px;
+    flex-direction: column;
+    background: #fcfcfc;
+    border-radius: 20px;
+    border: 5px solid chocolate;
+}
+.success-popup__title {
+    font-family: 'Zen Dots', cursive;
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+    margin: 30px auto 0;
+    text-decoration: underline;
+}
+.success-popup__description {
+    font-family: 'Zen Dots', cursive;
+    font-size: 16px;
+    line-height: 22px;
+    color: black;
+    margin: 35px auto 0;
+    text-align: center;
+    max-width: 200px;
+}
+.success-popup__button {
+    font-family: 'Karantina', cursive;
+    width: 200px;
+    height: 50px;
+    margin: auto auto 30px;
+    background-color: chocolate;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 130%;
+    letter-spacing: 3px;
+}
+.success-popup__button:hover {
+    cursor: pointer;
+    background-color: rgb(182, 91, 26);
+}
+.success-popup__button:active {
+    box-shadow: inset 6px 7px 6px rgba(0, 0, 0, 0.4);
+}
+.success-popup__button:focus {
+    outline: none;
+}

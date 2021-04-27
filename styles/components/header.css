@@ -8,7 +8,7 @@
     font-size: 30px;
     line-height: 130%;
     margin: 40px auto 0;
-    color: orange;
+    color: chocolate;
 }
 .header__navigation {
     display: flex;
@@ -20,6 +20,9 @@
     line-height: 130%;
     margin: 0 30px 0 0;
     color: #FFFFFF;
+}
+.header__links:hover {
+    opacity: .6;
 }
 .header__links:last-of-type {
     margin-right: 0;

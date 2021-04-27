@@ -6,7 +6,7 @@
     font-size: 30px;
     line-height: 130%;
     margin: 60px auto 0;
-    color: orange;
+    color: chocolate;
 }
 @media screen and (max-width: 550px) {
     .footer__title {
