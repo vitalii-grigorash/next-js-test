@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Head from 'next/head';
 import FeedBackForm from '../components/FeedBackForm';
 import SuccessPopup from '../components/SuccessPopup';
+import * as FeedbackFormApi from '../utils/FeedbackFormApi';
 
 export default function MainPage () {
 
@@ -19,12 +20,17 @@ export default function MainPage () {
 
   function feedbackFormSend (name, number) {
     setSubmitButtonText('Sending...');
-    console.log(name, number);
-    setTimeout(() => {
-      setSubmitButtonText('Send form');
+    FeedbackFormApi.sendForm(name, number)
+    .then(() => {
       setSenderName(name);
       handleSuccessPopupOpen();
-    }, 2000);
+    })
+    .catch((err) => {
+      console.log(err.message);
+    })
+    .finally(() => {
+      setSubmitButtonText('Send form');
+    });
   }
 
   return (
