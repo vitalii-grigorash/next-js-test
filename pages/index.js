@@ -7,6 +7,7 @@ export default function MainPage () {
 
   const [isSuccessPopupOpen, setSuccessPopupOpen] = useState(false);
   const [submitButtonText, setSubmitButtonText] = useState('Send form');
+  const [senderName, setSenderName] = useState('');
 
   function handleSuccessPopupOpen () {
     if (!isSuccessPopupOpen) {
@@ -21,6 +22,7 @@ export default function MainPage () {
     console.log(name, number);
     setTimeout(() => {
       setSubmitButtonText('Send form');
+      setSenderName(name);
       handleSuccessPopupOpen();
     }, 2000);
   }
@@ -44,6 +46,7 @@ export default function MainPage () {
       <SuccessPopup
         isOpen={isSuccessPopupOpen}
         onClose={handleSuccessPopupOpen}
+        name={senderName}
       />
       
     </section>
