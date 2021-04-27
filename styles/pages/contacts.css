@@ -19,8 +19,9 @@
     border-radius: 50px;
     border: none;
     font-weight: bold;
-    font-size: 25px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 1px;
 }
 .contacts__button:hover {
     cursor: pointer;
