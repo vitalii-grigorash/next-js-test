@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import FeedBackForm from '../components/FeedBackForm';
 import SuccessPopup from '../components/SuccessPopup';
@@ -18,7 +18,7 @@ export default function MainPage () {
     }
   }
 
-  function feedbackFormSend (name, number) {
+  function feedbackFormSend(name, number) {
     setSubmitButtonText('Sending...');
     FeedbackFormApi.sendForm(name, number)
     .then(() => {
@@ -39,12 +39,12 @@ export default function MainPage () {
 
       <Head>
         <title>Main Page</title>
-        <meta name="description" content="Описание главной страницы!"/>
+        <meta name="description" content="Описание главной страницы!" />
       </Head>
 
       <h1 className="main__title">Main Page</h1>
 
-      <FeedBackForm 
+      <FeedBackForm
         onSendForm={feedbackFormSend}
         submitButtonText={submitButtonText}
       />
@@ -54,7 +54,8 @@ export default function MainPage () {
         onClose={handleSuccessPopupOpen}
         name={senderName}
       />
-      
+
     </section>
+    
   )
 }
