@@ -20,12 +20,23 @@
     line-height: 130%;
     margin: 0 30px 0 0;
     color: #FFFFFF;
+    text-decoration: none;
 }
 .header__links:hover {
     opacity: .6;
 }
 .header__links:last-of-type {
     margin-right: 0;
+}
+.header__links_active {
+    color: chocolate;
+    text-decoration: underline;
+}
+.header__links_active:hover {
+    color: chocolate;
+    text-decoration: underline;
+    opacity: 1;
+    cursor: text;
 }
 @media screen and (max-width: 550px) {
     .header__navigation {

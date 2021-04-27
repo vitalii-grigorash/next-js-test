@@ -18,7 +18,7 @@ export default function AboutUs () {
 
             <h1 className="about-us__title">About Us Page</h1>
 
-            <button className="about-us__button" onClick={buttonClick}>Main page</button>
+            <button className="about-us__button" onClick={buttonClick}>Go back to Main page</button>
 
         </section>
     )

@@ -18,7 +18,7 @@ export default function Contacts () {
 
       <h1 className="contacts__title">Contacts Page</h1>
 
-      <button className="contacts__button" onClick={buttonClick}>Main page</button>
+      <button className="contacts__button" onClick={buttonClick}>Go back to Main page</button>
       
     </div>
   )

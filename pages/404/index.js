@@ -18,7 +18,7 @@ export default function ErrorPage () {
 
       <h1 className="error__title">Page Not Found</h1>
 
-      <button className="error__button" onClick={buttonClick}>Main page</button>
+      <button className="error__button" onClick={buttonClick}>Go to Main page</button>
       
     </div>
   )

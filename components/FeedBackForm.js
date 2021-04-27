@@ -1,6 +1,6 @@
 import { Validation } from '../utils/Validation';
 
-export default function FeedBackForm(props) {
+export default function FeedBackForm (props) {
 
     const {
         onSendForm,
