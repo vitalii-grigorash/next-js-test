@@ -29,6 +29,9 @@
 .form__input:focus {
     outline: none;
 }
+.form__input::placeholder {
+    font-family: 'Zen Dots', cursive;
+}
 .form__input_error {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
