@@ -20,8 +20,11 @@
 .form__input {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    width: 290px;
-    height: 30px;
+    width: 270px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    padding: 0 10px;
 }
 .form__input:focus {
     outline: none;
@@ -30,7 +33,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     line-height: 16px;
-    width: 290px;
+    width: 270px;
     height: 40px;
     color: red;
     margin: 5px 0 0;
