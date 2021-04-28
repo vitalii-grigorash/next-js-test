@@ -20,4 +20,4 @@ export const sendForm = (name, number) => fetch('/api/feedbackform', {
 })
 .catch((err) => { 
     throw new Error(err.message);
-});
+})
