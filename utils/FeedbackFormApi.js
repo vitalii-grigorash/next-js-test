@@ -1,6 +1,4 @@
-export const BASE_URL = 'http://localhost:3001';
-
-export const sendForm = (name, number) => fetch(`${BASE_URL}/feedbackform`, {
+export const sendForm = (name, number) => fetch('/api/feedbackform', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
