@@ -1,5 +1,5 @@
 export default (req, res) => {
-    const nodemailer = require('nodemailer');
+    const nodemailer = require('nodemailer')
     require('dotenv').config()
     const PASSWORD = process.env.password
     const data = req.body;
