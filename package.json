@@ -9,7 +9,6 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
     "next": "10.1.3",
     "nodemailer": "^6.4.18",
     "react": "17.0.2",

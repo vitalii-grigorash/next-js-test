@@ -1,14 +1,12 @@
 export default (req, res) => {
     const nodemailer = require('nodemailer');
-    require('dotenv').config()
-    const PASSWORD = process.env.password
     const data = req.body;
     const smtpTransport = nodemailer.createTransport({
         service: 'Gmail',
         port: 465,
         auth: {
             user: 'vitalii.grigorash.job@gmail.com',
-            pass: PASSWORD,
+            pass: '1q2w3e4R5Tgrigorash',
         }
     });
 
