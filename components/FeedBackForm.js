@@ -62,7 +62,6 @@ export default function FeedBackForm (props) {
 
             <button type="submit" className="form__submit-button">{submitButtonText}</button>
 
-
         </form>
     )
 }

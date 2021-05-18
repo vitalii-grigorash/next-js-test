@@ -1,0 +1,4 @@
+PassengerNodejs /home/o/ooorobip/.local/bin/node
+PassengerAppRoot /home/o/ooorobip/stroi.ooorobip.beget.tech/public_html/next-js-test
+PassengerAppType node
+PassengerStartupFile server.js
