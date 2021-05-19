@@ -8,7 +8,7 @@ export default (req, res) => {
             user: 'vitalii.grigorash.job@gmail.com',
             pass: '1q2w3e4R5Tgrigorash',
         }
-    });
+    })
 
     const mailOptions = {
         from: 'vitalii.grigorash.job@gmail.com',
