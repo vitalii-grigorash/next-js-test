@@ -17,6 +17,7 @@
 
 # settings
 .htaccess
+nodemailerConfig.js
 
 # misc
 .DS_Store
