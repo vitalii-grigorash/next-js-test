@@ -1,10 +1,12 @@
-import Head from 'next/head';
-import Router from 'next/router';
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
-export default function AboutUs () {
+export default function AboutUs() {
 
-    function buttonClick () {
-        Router.push('/');
+    const router = useRouter();
+
+    function buttonClick() {
+        router.push('/');
     }
 
     return (
@@ -13,7 +15,7 @@ export default function AboutUs () {
 
             <Head>
                 <title>About Us Page</title>
-                <meta name="description" content="Описание страницы About Us"/>
+                <meta name="description" content="Описание страницы About Us" />
             </Head>
 
             <h1 className="about-us__title">About Us Page</h1>

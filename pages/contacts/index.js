@@ -1,11 +1,13 @@
-import Head from 'next/head';
-import Router from 'next/router';
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
-export default function Contacts () {
+export default function Contacts() {
 
-    function buttonClick () {
-        Router.push('/');
-    }
+  const router = useRouter();
+
+  function buttonClick() {
+    router.push('/');
+  }
 
   return (
 
@@ -13,13 +15,13 @@ export default function Contacts () {
 
       <Head>
         <title>Contacts Page</title>
-        <meta name="description" content="Описание страницы с контактами!"/>
+        <meta name="description" content="Описание страницы с контактами!" />
       </Head>
 
       <h1 className="contacts__title">Contacts Page</h1>
 
       <button className="contacts__button" onClick={buttonClick}>Go back to Main page</button>
-      
+
     </div>
   )
 }

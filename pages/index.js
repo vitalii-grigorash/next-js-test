@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Head from 'next/head';
-import FeedBackForm from '../components/FeedBackForm';
-import SuccessPopup from '../components/SuccessPopup';
-import * as FeedbackFormApi from '../utils/FeedbackFormApi';
+import React, { useState } from 'react'
+import Head from 'next/head'
+import FeedBackForm from '../components/FeedBackForm'
+import SuccessPopup from '../components/SuccessPopup'
+import * as FeedbackFormApi from '../utils/FeedbackFormApi'
 
 export default function MainPage () {
 
