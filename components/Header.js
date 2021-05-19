@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 export default function Header() {
 
-    const router = useRouter();
+    const { pathname } = useRouter();
 
     return (
 
@@ -13,13 +13,13 @@ export default function Header() {
 
             <nav className="header__navigation">
                 <Link href={'/'}>
-                    <a className={`header__links ${router.pathname === '/' && 'header__links_active'}`}>Main page</a>
+                    <a className={`header__links ${pathname === '/' && 'header__links_active'}`}>Main page</a>
                 </Link>
                 <Link href={'/about-us'}>
-                    <a className={`header__links ${router.pathname === '/about-us' && 'header__links_active'}`}>About us page</a>
+                    <a className={`header__links ${pathname === '/about-us' && 'header__links_active'}`}>About us page</a>
                 </Link>
                 <Link href={'/contacts'}>
-                    <a className={`header__links ${router.pathname === '/contacts' && 'header__links_active'}`}>Contacts Page</a>
+                    <a className={`header__links ${pathname === '/contacts' && 'header__links_active'}`}>Contacts Page</a>
                 </Link>
             </nav>
 
