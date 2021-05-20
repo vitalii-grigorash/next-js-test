@@ -5,11 +5,12 @@ import * as FeedbackFormApi from '../utils/FeedbackFormApi'
 
 export default function FeedBackForm () {
 
+    const name = Validation();
+    const number = Validation();
+
     const [isSuccessPopupOpen, setSuccessPopupOpen] = useState(false);
     const [submitButtonText, setSubmitButtonText] = useState('Send form');
     const [senderName, setSenderName] = useState('');
-    const name = Validation();
-    const number = Validation();
 
     function handleSuccessPopupOpen () {
         if (!isSuccessPopupOpen) {
@@ -19,26 +20,22 @@ export default function FeedBackForm () {
         }
     }
 
-    function feedbackFormSend(name, number) {
-        setSubmitButtonText('Sending...');
-        FeedbackFormApi.sendForm(name, number)
-            .then(() => {
-                setSenderName(name);
-                handleSuccessPopupOpen();
-            })
-            .catch((err) => {
-                console.log(err.message);
-            })
-            .finally(() => {
-                setSubmitButtonText('Send form');
-            });
-    }
-
-    function submitForm(evt) {
+    function submitForm (evt) {
         evt.preventDefault();
-        feedbackFormSend(name.value, number.value);
-        name.setValue('');
-        number.setValue('');
+        setSubmitButtonText('Sending...');
+        FeedbackFormApi.sendForm(name.value, number.value)
+        .then(() => {
+            setSenderName(name.value);
+            handleSuccessPopupOpen();
+        })
+        .catch((err) => {
+            console.log(err.message);
+        })
+        .finally(() => {
+            setSubmitButtonText('Send form');
+            name.setValue('');
+            number.setValue('');
+        });
     }
 
     return (

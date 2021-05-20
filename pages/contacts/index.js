@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import FeedBackForm from '../../components/FeedBackForm'
 
 export default function Contacts () {
 
@@ -19,6 +20,8 @@ export default function Contacts () {
       </Head>
 
       <h1 className="contacts__title">Contacts Page</h1>
+
+      <FeedBackForm />
 
       <button className="contacts__button" onClick={buttonClick}>Go back to Main page</button>
 

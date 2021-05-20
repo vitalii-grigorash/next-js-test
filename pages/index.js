@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import FeedBackForm from '../components/FeedBackForm'
 
 export default function Main () {
 
@@ -13,8 +12,6 @@ export default function Main () {
       </Head>
 
       <h1 className="main__title">Main Page</h1>
-
-      <FeedBackForm />
 
     </section>
 
