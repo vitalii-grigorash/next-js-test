@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-export default function Contacts() {
+export default function Contacts () {
 
   const router = useRouter();
 
