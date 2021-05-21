@@ -43,7 +43,7 @@ export default (req, res) => {
         smtpTransport.close();
 
     } else {
-        res.status(500).send({ message: `На сервере произошла ошибка` });
+        res.status(500).send({ message: `What am I doing here?` });
     }
 
 }
