@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Validation } from '../utils/Validation'
-import SuccessPopup from '../components/SuccessPopup'
+import SuccessPopup from './SuccessPopup'
 import * as FeedbackFormApi from '../utils/FeedbackFormApi'
 
 export default function FeedBackForm () {
