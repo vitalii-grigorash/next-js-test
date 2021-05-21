@@ -43,7 +43,7 @@ export default (req, res) => {
         smtpTransport.close();
 
     } else {
-        res.status(500).send({ message: `What am I doing here?` });
+        res.status(500).send({ message: `What are you doing here? Mmmm...? o_O ` });
     }
 
 }
