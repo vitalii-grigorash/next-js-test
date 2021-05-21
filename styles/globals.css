@@ -11,8 +11,8 @@ body {
     background-color: black;
 }
 
-@import url(../vendor/normalize.css);
-@import url(../fonts/fonts.css);
+@import url(./vendor/normalize.css);
+@import url(./fonts/fonts.css);
 
 @import url(./pages/main.css);
 @import url(./pages/about-us.css);

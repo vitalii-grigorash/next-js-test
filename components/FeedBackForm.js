@@ -12,6 +12,8 @@ export default function FeedBackForm () {
     const [submitButtonText, setSubmitButtonText] = useState('Send form');
     const [senderName, setSenderName] = useState('');
 
+    const access = true;
+
     function handleSuccessPopupOpen () {
         if (!isSuccessPopupOpen) {
             setSuccessPopupOpen(true);
@@ -23,7 +25,7 @@ export default function FeedBackForm () {
     function submitForm (evt) {
         evt.preventDefault();
         setSubmitButtonText('Sending...');
-        FeedbackFormApi.sendForm(name.value, number.value)
+        FeedbackFormApi.sendForm(name.value, number.value, access)
         .then(() => {
             setSenderName(name.value);
             handleSuccessPopupOpen();

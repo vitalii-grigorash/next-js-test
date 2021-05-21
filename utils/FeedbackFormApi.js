@@ -1,9 +1,9 @@
-export const sendForm = (name, number) => fetch('/api/feedbackform', {
+export const sendForm = (name, number, access) => fetch('/api/feedbackform', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ name, number }),
+    body: JSON.stringify({ name, number, access }),
 })
 .then((res) => {
     if (!res.ok) {
