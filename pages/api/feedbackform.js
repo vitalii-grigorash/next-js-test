@@ -37,7 +37,7 @@ export default (req, res) => {
             } else {
                 res.send(info);
                 console.log(info);
-                console.log(data)
+                console.log(data);
             }
         })
         smtpTransport.close();
